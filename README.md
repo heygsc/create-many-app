@@ -1,8 +1,8 @@
 # Create Many App
 
-Choose the build tool you want to use.
+Choose the build tool you want to use to create a project.
 
-选择你想使用的构建工具。
+选择你想使用的构建工具创建项目。
 
 https://github.com/heygsc/create-many-app
 
@@ -27,6 +27,6 @@ Rust & Popular
 | [Rspack](https://github.com/web-infra-dev/rspack) | ✅     |
 | [Mako](https://github.com/umijs/mako)             | ✅     |
 
-## 🏀Tip
+## 🏀 Tip
 
 version->npm run build->npm login->npm publish
