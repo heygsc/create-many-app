@@ -1,1 +1,1 @@
-# create-many-app
+npx create-many-app
