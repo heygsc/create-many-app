@@ -2,19 +2,24 @@
 import prompt from "prompts";
 import chalk from "chalk";
 import { execSync } from "child_process";
+import { pastel, fruit, mind } from "gradient-string";
 
-console.log(chalk.bgBlueBright.black.bold("create-many-app"));
+console.log(pastel("\n🎉 Create-Many-App !"));
+console.log(
+  fruit("\n⭐ project link : https://github.com/heygsc/create-many-app"),
+);
+console.log(mind("\n🎨 author : https://github.com/heygsc \n"));
 
-async function initProject() {
+async function chooseTool() {
   const response = await prompt({
     type: "select",
     name: "tool",
-    message: "请选择构建工具",
+    message: "🚀 请选择构建工具",
     choices: [
       { title: chalk.green("Vite"), value: "vite" },
-      { title: chalk.red("Farm"), value: "farm" },
-      { title: chalk.yellow("Rspack"), value: "rspack" },
-      { title: chalk.blueBright("Mako"), value: "mako" },
+      { title: chalk.hex("#c44cac")("Farm"), value: "farm" },
+      { title: chalk.hex("#ff8b00")("Rspack"), value: "rspack" },
+      { title: chalk.hex("#929ef4")("Mako"), value: "mako" },
     ],
   });
 
@@ -37,4 +42,4 @@ async function initProject() {
   }
 }
 
-initProject();
+chooseTool();

@@ -47,18 +47,23 @@ var __async = (__this, __arguments, generator) => {
 var import_prompts = __toESM(require("prompts"), 1);
 var import_chalk = __toESM(require("chalk"), 1);
 var import_child_process = require("child_process");
-console.log(import_chalk.default.bgBlueBright.black.bold("create-many-app"));
-function initProject() {
+var import_gradient_string = require("gradient-string");
+console.log((0, import_gradient_string.pastel)("\n\u{1F389} Create-Many-App !"));
+console.log(
+  (0, import_gradient_string.fruit)("\n\u2B50 project link : https://github.com/heygsc/create-many-app")
+);
+console.log((0, import_gradient_string.mind)("\n\u{1F3A8} author : https://github.com/heygsc \n"));
+function chooseTool() {
   return __async(this, null, function* () {
     const response = yield (0, import_prompts.default)({
       type: "select",
       name: "tool",
-      message: "\u8BF7\u9009\u62E9\u6784\u5EFA\u5DE5\u5177",
+      message: "\u{1F680} \u8BF7\u9009\u62E9\u6784\u5EFA\u5DE5\u5177",
       choices: [
         { title: import_chalk.default.green("Vite"), value: "vite" },
-        { title: import_chalk.default.red("Farm"), value: "farm" },
-        { title: import_chalk.default.yellow("Rspack"), value: "rspack" },
-        { title: import_chalk.default.blueBright("Mako"), value: "mako" }
+        { title: import_chalk.default.hex("#c44cac")("Farm"), value: "farm" },
+        { title: import_chalk.default.hex("#ff8b00")("Rspack"), value: "rspack" },
+        { title: import_chalk.default.hex("#929ef4")("Mako"), value: "mako" }
       ]
     });
     const tool = response.tool;
@@ -80,4 +85,4 @@ function initProject() {
     }
   });
 }
-initProject();
+chooseTool();
