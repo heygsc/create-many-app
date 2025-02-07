@@ -30,3 +30,6 @@ Rust & Popular
 ## 🏀 Tip
 
 version->npm run build->npm login->npm publish
+
+## 欢迎点点star
+## 欢迎关注[作者](https://github.com/heygsc)
